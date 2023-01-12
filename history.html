@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 			<title>History</title>
-		
-		<link rel="stylesheet" href="main.css" media="all">
-		
+
+		<link rel="stylesheet" href="css/main.css" media="all">
+
 		<!-- Mobile Friendliness -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="MobileOptimized" content="width">
@@ -15,16 +15,25 @@
 
 <body>
 
-<header role="banner">
-		<h1><a href="index.html">Chocolate</a></h1>
-		<a href="#menu">Jump to the Menu</a>
+<header role="banner" class="banner">
+
+		<a href="index.html" class="logo">Chocolate</a>
+		<div class="container">
+		<nav id="menu" role="navigation">
+		 <ul>
+		   <li><a href="index.html" class="active">An Introduction to Chocolate</a></li>
+		   <li><a href="history.html">History of Chocolate</a></li>
+		   <li><a href="types.html">Types of Chocolate</a></li>
+		 </ul>
+		</nav>
+		</div>
 	</header>
 
 <main role="main">	
 
-	<h1>History of Chocolate</h1>
-
-		<h2>Mesoamerican usage</h2>
+	<h1 class="heading">History of Chocolate</h1>
+<br/>
+	<h2 class="heading">Mesoamerican usage</h2>
 
 <p>Chocolate has been prepared as a drink for nearly all of its history. For example, one vessel found at an Olmec archaeological site on the Gulf Coast of Veracruz, Mexico, dates chocolate's preparation by pre-Olmec peoples as early as 1750 BC. On the Pacific coast of Chiapas, Mexico, a Mokaya archaeological site provides evidence of cocoa beverages dating even earlier to 1900 BC. The residues and the kind of vessel in which they were found indicate the initial use of cocoa was not simply as a beverage, but the white pulp around the cocoa beans was likely used as a source of fermentable sugars for an alcoholic drink.</p>
 
@@ -39,7 +48,7 @@
 
 <hr>
 
-<h2>European adaptation</h2>
+<h2 class="heading">European adaptation</h2>
 
 <p>Until the 16th century, no European had ever heard of the popular drink from the Central American peoples. Christopher Columbus and his son Ferdinand encountered the cocoa bean on Columbus's fourth mission to the Americas on 15 August 1502, when he and his crew stole a large native canoe that proved to contain cocoa beans among other goods for trade. Spanish conquistador Hernán Cortés may have been the first European to encounter it, as the frothy drink was part of the after-dinner routine of Montezuma. José de Acosta, a Spanish Jesuit missionary who lived in Peru and then Mexico in the later 16th century, wrote of its growing influence on the Spaniards:</p>
 
@@ -59,7 +68,7 @@
 
 <p>Besides Nestlé, several notable chocolate companies had their start in the late 19th and early 20th centuries. Rowntree's of York set up and began producing chocolate in 1862, after buying out the Tuke family business. Cadbury was manufacturing boxed chocolates in England by 1868. Manufacturing their first Easter egg in 1875, Cadbury created the modern chocolate Easter egg after developing a pure cocoa butter that could easily be molded into smooth shapes. In 1893, Milton S. Hershey purchased chocolate processing equipment at the World's Columbian Exposition in Chicago, and soon began the career of Hershey's chocolates with chocolate-coated caramels.</p>
 
-<h2>Introduction to the United States</h2>
+<h2 class="heading">Introduction to the United States</h2>
 <p>The Baker Chocolate Company, which makes Baker's Chocolate, is the oldest producer of chocolate in the United States. In 1765 Dr. James Baker and John Hannon founded the company in Boston. Using cocoa beans from the West Indies, the pair built their chocolate business, which is still in operation.</p>
 
 <p>White chocolate was first introduced to the U.S. in 1946 by Frederick E. Hebert of Hebert Candies in Shrewsbury, Massachusetts, near Boston, after he had tasted "white coat" candies while traveling in Europe.</p>
@@ -67,5 +76,11 @@
 
 
 </main>
+
+<hr/>
+
+<footer role="contentinfo">
+<p id="copyright">The text content of this site was borrowed from the <a href="https://en.wikipedia.org/wiki/Chocolate">Wikipedia article on Chocolate</a> on 10 January 2023 under the Creative Commons Attribution-ShareAlike License. Licensing terms of content from other sources (photos, etc.) is noted along with each respective resource.</p>
+</footer>
 </body>
 </html>
