@@ -9,6 +9,45 @@ header {
     background-size:100%;
 }
 
+.hero {
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+	background: url("images/bannerchocolate.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;	
+}
+
+div.hero img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top:0px;
+	left: 0px;
+}
+
+.herotext {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h1.herotext {
+	font-size: 5.9vw;
+	display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+}
+
+.active {
+	color: black;
+}
 
 nav {
 	display: flex;
@@ -31,17 +70,22 @@ nav ul li a {
 }
 
 ol { 
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10% 0 10%;
+    align-items: right;
 }
 
+
+section.index {
+	background-color: #E5D3B3;
+	border: 1px solid black;
+	padding: 0 20px 0 20px;
+	margin: 16px 0 16px;
+	width:fit-content;
+}
 
 ol a { 
     	color: black;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 
@@ -58,13 +102,13 @@ html, body {
 
 /* Body */
 
-main, footer {
+main {
     box-sizing: border-box;
     padding: 0 1em;
 }
 
-main, footer {
-    margin: 0 auto;
+main {
+    margin: 32px auto 64px auto;
     max-width: 960px;
 }
 
@@ -78,10 +122,25 @@ main, footer {
 }
 
 
+.footcontainer {
+    background: #E5D3B3;
+    color: #fff;
+    margin: 0 0 0;
+    padding: 15px;
+    position: relative;
+    background-size:100%;  
+}
+
+#copyright {
+	color: black;
+	padding: 0 1em;
+}
 
 h2 {
     color: #563d2d;
 }
+
+
 
 
 
