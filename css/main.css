@@ -37,12 +37,23 @@ div.hero img{
 }
 
 .herotext {
-  text-align: center;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: transparent;
+	background-image: linear-gradient(#fff,#fff);
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	background-position: -1200px 0;
+	animation: backcolor 5s linear forwards;
+}
+
+@keyframes backcolor {
+	100%{
+		background-position: 0 0;
+	}
 }
 
 p.herotext {
