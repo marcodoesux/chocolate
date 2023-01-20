@@ -46,8 +46,8 @@ div.hero img{
 	background-image: linear-gradient(#fff,#fff);
 	background-repeat: no-repeat;
 	-webkit-background-clip: text;
-	background-position: -1200px 0;
-	animation: backcolor 5s linear forwards;
+	background-position: -500px 0;
+	animation: backcolor 4s linear forwards;
 }
 
 @keyframes backcolor {
