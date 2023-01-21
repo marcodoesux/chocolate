@@ -509,5 +509,9 @@ h1.herotext {
 	left: 0;
 	padding-left: 0px;
 }
+	
+main {
+	margin-top: 12px;
+}
 
 }
