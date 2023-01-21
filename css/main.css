@@ -1,45 +1,97 @@
 /* Banner */
 
 header {
-    background: #2a1e16;
-    color: #fff;
-    margin: 0 0 0;
-    padding: 15px;
-    position: relative;
-    background-size:100%;
+	position: fixed;
+	top: 0;
+	background: #2a1e16;
+	width: 100%;
+	z-index: 100;
 }
 
+.navbar {
+    	width: 100%;
+	min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-menu {
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
 
 ul a{
 	display: flex;
 	justify-content: center;
 }
 
+a.logo {
+	font-size: 2em;
+}
+
+
+.hamburger{
+	display: none;
+	cursor: pointer;
+}
+
+
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
+}
+
+
+
+
 
 .hero {
 	width: 100%;
 	height: 70%;
 	overflow: hidden;
-	background: url("images/bannerchocolate.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;	
 }
 
+
+
 div.hero img{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
+	background-size: cover;
+	height: 50%;
 	position: relative;
-	top:0px;
+	padding: 70px 0 0;
 	left: 0px;
+}
+
+
+.main-herotext {
+	text-align: center;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: transparent;
+	background-image: linear-gradient(#fff,#fff);
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	background-position: -1200px 0;
+	animation: backcolor 4s linear forwards;
 }
 
 .herotext {
 	text-align: center;
 	position: absolute;
-	top: 25%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: transparent;
@@ -50,6 +102,13 @@ div.hero img{
 	animation: backcolor 4s linear forwards;
 }
 
+
+h1.herotext, h1.main-herotext {
+	font-family: "Montserrat-Alternates", Arial, sans-serif;
+}
+
+
+
 @keyframes backcolor {
 	100%{
 		background-position: 0 0;
@@ -57,23 +116,24 @@ div.hero img{
 }
 
 p.herotext {
-  font-size: 4vw;
+  font-size: 2vw;
   white-space: nowrap;
   text-align: center;
   position: absolute;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
-h1.herotext {
-	font-size: 5.9vw;
+h1.herotext, h1.main-herotext {
+	font-size: 5vw;
 	display: inline-block;
         overflow: hidden;
         white-space: nowrap;
 }
 
-.active {
+
+#active {
 	color: #E5B899;
 }
 
@@ -135,7 +195,15 @@ html, body {
   padding: 0;
 }
 
+.container {
+	width: 1600px;
+	margin: auto;
+}
 
+.subcontainer {
+	width: 85%;
+	margin: auto;
+}
 
 
 /* Body */
@@ -257,7 +325,6 @@ p, h1, li {
 }
 
 
-
 @font-face {
 	font-family: Lato;
 	src: url(../f/Lato-Italic.ttf) format("truetype");
@@ -282,12 +349,23 @@ p, h1, li {
 }
 
 
+@font-face {
+	font-family: Montserrat-Alternates;
+	src: url(../f/MontserratAlternates-Regular.ttf) format("truetype");
+	font-weight: 400;
+        font-style: regular;
+}
+
 
 /* Media */
 
 
 /* Small devices (tablets, 1024px and up) */
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
+
+.container{
+	width: 100%;
+}
 
 p {
 	font-size: 16px;
@@ -328,23 +406,107 @@ h2.heading {
 @media (max-width: 576px) {
 
 h1.heading {
-    font-size: 20px;
-    background: #b78f76;
-    color: #000;
-    margin: 16px 0 16px;
-    padding: 15px;
-    display:inline-block;
-    border-radius: 10px;
+	font-size: 20px;
+	background: #b78f76;
+	color: #000;
+	margin: 16px 0 16px;
+	padding: 15px;
+	display:inline-block;
+	border-radius: 10px;
  }
 
 h2.heading {
-    font-size: 18px;
-    background: #b78f76;
-    color: #000;
-    margin: 16px 0 16px;
-    padding: 10px;
-    display:inline-block;
-    border-radius: 10px;
+	font-size: 18px;
+	background: #b78f76;
+	color: #000;
+	margin: 16px 0 16px;
+	padding: 10px;
+	display:inline-block;
+	border-radius: 10px;
  }
+
+
+.herotext {
+	top: 45%;
+}
+
+
+.main-herotext {
+	transform: translate(-50%, -50%);
+	color: transparent;
+	background-image: linear-gradient(#fff,#fff);
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	background-position: -500px 0;
+	animation: backcolor 4s linear forwards;
+}
+
+.herotext {
+	transform: translate(-50%, -50%);
+	color: transparent;
+	background-image: linear-gradient(#fff,#fff);
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	background-position: -350px 0;
+	animation: backcolor 4s linear forwards;
+}
+
+p.herotext {
+  font-size: 3vw;
+  white-space: nowrap;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h1.herotext {
+	font-size: 6vw;
+	display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+}
+
+
+.hamburger {
+	display: block;
+}
+
+
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+	
+
+.hamburger.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+	position: fixed;
+	left: -120%;
+	top: 50px;
+	gap: 0;
+	flex-direction: column;
+	background-color: #2a1e16;
+	width: 100%;
+	text-align: center;
+	transition: 0.3s;
+	z-index: 100;
+}
+
+.nav-item {
+	margin: 10px 0;
+}
+
+.nav-menu.active {
+	left: 0;
+	padding-left: 0px;
+}
 
 }
