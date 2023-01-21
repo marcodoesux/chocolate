@@ -17,15 +17,22 @@
 
 <header role="banner" class="banner">
 
-		<div class="container">
-		<nav role="navigation">
+	<div class="container">
+		<div class="subcontainer">
+		<nav class="navbar">
 		<a href="index.html" class="logo">Chocolate</a>
-		 <ul>
-		   <li><a href="index.html">Home</a></li>
-		   <li><a href="history.html" class="active">History</a></li>
-		   <li><a href="types.html">Types</a></li>
+		 <ul class="nav-menu">
+		   <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+		   <li class="nav-item"><a href="history.html" class="nav-link" id="active">History</a></li>
+		   <li class="nav-item"><a href="types.html" class="nav-link">Types</a></li>
 		 </ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
 		</nav>
+		</div>
 		</div>
 	</header>
 
@@ -109,5 +116,7 @@
 <div class="footcontainer"><p id="copyright">The text content of this site was borrowed from the <a href="https://en.wikipedia.org/wiki/Chocolate">Wikipedia article on Chocolate</a> on 10 January 2023 under the Creative Commons Attribution-ShareAlike License. Licensing terms of content from other sources (photos, etc.) is noted along with each respective resource.</p>
 </div>
 </footer>
-</body>
+
+		<script src="js/main.js" async></script>
+	</body>
 </html>
