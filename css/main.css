@@ -66,8 +66,9 @@ a.logo {
 
 
 div.hero img{
-	background-size: cover;
-	height: 50%;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
 	position: relative;
 	padding: 70px 0 0;
 	left: 0px;
